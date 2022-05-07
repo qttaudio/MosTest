@@ -11,8 +11,11 @@
 
 ### 产生样本
 1.将Demo分别安装到两台手机
+
 2.两个客户端加入到一个房间，并在一端不停的发出人声，持续10~20s，关闭程序
+
 3.使用adb 将应用程序目录下Crash目录的\*_receive.raw和\*_record.raw上传到Visqol所在目录
+
 4.使用ffmpeg将raw文件转成wav文件
 ```
 ffmpeg -f s16le -ar 48000 -ac 2 -i *_receive.raw receive.wav
