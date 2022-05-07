@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_rectangle_white_bg"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_360p"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qb_px_12"
+        android:layout_marginTop="@dimen/qb_px_9"
+        android:text="360P"
+        android:textColor="#ff333333"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/qb_px_5"
+        android:layout_marginTop="@dimen/qb_px_5"
+        android:layout_marginRight="@dimen/qb_px_5"
+        android:background="#EEEEEE" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_720p"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qb_px_12"
+        android:layout_marginTop="@dimen/qb_px_9"
+        android:text="480P"
+        android:textColor="#ff333333"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/qb_px_5"
+        android:layout_marginTop="@dimen/qb_px_5"
+        android:layout_marginRight="@dimen/qb_px_5"
+        android:background="#EEEEEE" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginBottom="@dimen/qb_px_9"
+        android:id="@+id/tv_1080p"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qb_px_12"
+        android:layout_marginTop="@dimen/qb_px_9"
+        android:text="720P"
+        android:textColor="#ff333333"
+        android:textSize="14sp" />
+
+</LinearLayout>

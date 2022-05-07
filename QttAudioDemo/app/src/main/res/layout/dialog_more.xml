@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_rectangle_while"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_10">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_20"
+            android:text="更多"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_exit"
+            android:layout_width="@dimen/qb_px_18"
+            android:layout_height="@dimen/qb_px_18"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/qb_px_14"
+            android:src="@drawable/icon_exit_svg" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/qb_px_11"
+        android:background="#EEEEEE" />
+
+    <LinearLayout
+        android:id="@+id/ll_enableVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_20"
+        android:layout_marginRight="@dimen/qb_px_22"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/qb_px_20"
+            android:layout_height="@dimen/qb_px_20"
+            android:layout_marginLeft="@dimen/qb_px_20"
+            android:src="@mipmap/ic_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_10"
+            android:text="视频"
+            android:textColor="#ff333333"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb_enableVideo"
+            android:layout_width="@dimen/qb_px_30"
+            android:layout_height="@dimen/qb_px_16"
+            android:checked="true"
+            android:background="@drawable/selector_check_open_or_close"
+            android:button="@null" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_resolution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_20"
+        android:layout_marginRight="@dimen/qb_px_22"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/qb_px_20"
+            android:layout_height="@dimen/qb_px_20"
+            android:layout_marginLeft="@dimen/qb_px_20"
+            android:src="@mipmap/px_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_10"
+            android:text="分辨率"
+            android:textColor="#ff333333"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/rl_resolution"
+            android:layout_width="@dimen/qb_px_100"
+            android:layout_height="@dimen/qb_px_25"
+            android:background="@drawable/selector_enable_bg">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_resolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/qb_px_12"
+                android:text="720P"
+                android:textColor="#ff333333"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/qb_px_15"
+                android:src="@mipmap/arrow_down" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qb_px_48"
+        android:layout_marginBottom="@dimen/qb_px_18"
+        android:text="提示：当前摄像头已关闭，该功能不能使用"
+        android:textColor="#ff437fe6"
+        android:textSize="8sp"
+        android:visibility="invisible" />
+
+</LinearLayout>

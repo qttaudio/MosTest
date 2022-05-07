@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_rectangle_while"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qb_px_20"
+        android:layout_marginTop="@dimen/qb_px_13"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美化"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <CheckBox
+            android:checked="true"
+            android:id="@+id/cb_status"
+            android:layout_width="@dimen/qb_px_30"
+            android:layout_height="@dimen/qb_px_16"
+            android:layout_marginLeft="@dimen/qb_px_10"
+            android:layout_marginRight="@dimen/qb_px_18"
+            android:background="@drawable/selector_check_open_or_close"
+            android:button="@null" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_exit"
+            android:layout_width="@dimen/qb_px_18"
+            android:layout_height="@dimen/qb_px_18"
+            android:layout_marginRight="@dimen/qb_px_13"
+            android:src="@drawable/icon_exit_svg" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/qb_px_10"
+        android:background="#EEEEEE" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qb_px_20"
+        android:layout_marginTop="@dimen/qb_px_7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_beauty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美颜"
+                android:textColor="#ff000000"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/v_beauty"
+                android:layout_width="@dimen/qb_px_15"
+                android:layout_height="@dimen/qb_px_3"
+                android:layout_marginTop="@dimen/qb_px_1"
+                android:background="@drawable/shape_rectangle_blue_bg" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_16"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="滤镜"
+                android:textColor="#ff777777"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/v_filter"
+                android:layout_width="@dimen/qb_px_15"
+                android:layout_height="@dimen/qb_px_3"
+                android:layout_marginTop="@dimen/qb_px_1"
+                android:background="@drawable/shape_rectangle_blue_bg"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_16"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_changeVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="变声"
+                android:textColor="#ff777777"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/v_changeVoice"
+                android:layout_width="@dimen/qb_px_15"
+                android:layout_height="@dimen/qb_px_3"
+                android:layout_marginTop="@dimen/qb_px_1"
+                android:background="@drawable/shape_rectangle_blue_bg"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_beauty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qb_px_24"
+        android:layout_marginTop="@dimen/qb_px_22"
+        android:layout_marginRight="@dimen/qb_px_28"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="磨皮"
+                android:textColor="#707070"
+                android:textSize="10sp" />
+
+            <SeekBar
+                android:id="@+id/sb_microdermabrasion"
+                style="@style/AppCompatSeekBarStyle"
+                android:max="10"
+                android:progress="0" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_microdermabrasion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.0"
+                android:textColor="#ff707070"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_23"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美白"
+                android:textColor="#707070"
+                android:textSize="10sp" />
+
+            <SeekBar
+                android:id="@+id/sb_whitening"
+                style="@style/AppCompatSeekBarStyle"
+                android:max="10"
+                android:progress="0" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_whitening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.5"
+                android:textColor="#ff707070"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_24"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_selectBg1"
+                android:layout_width="@dimen/qb_px_32"
+                android:layout_height="@dimen/qb_px_32">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/qb_px_30"
+                    android:layout_height="@dimen/qb_px_30"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/filter_raw" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_rawIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_5"
+                android:text="原图"
+                android:textColor="#ff333333"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_selectBg2"
+                android:layout_width="@dimen/qb_px_32"
+                android:layout_height="@dimen/qb_px_32">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/qb_px_30"
+                    android:layout_height="@dimen/qb_px_30"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/filter_old" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_5"
+                android:text="复古"
+                android:textColor="#ff333333"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_selectBg3"
+                android:layout_width="@dimen/qb_px_32"
+                android:layout_height="@dimen/qb_px_32">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/qb_px_30"
+                    android:layout_height="@dimen/qb_px_30"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/fliter_blue" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_5"
+                android:text="蓝调"
+                android:textColor="#ff333333"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_changeVoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_24"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_raw"
+                android:layout_width="@dimen/qb_px_23"
+                android:layout_height="@dimen/qb_px_23"
+                android:layout_marginTop="@dimen/qb_px_5"
+                android:src="@drawable/raw_close" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_raw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_10"
+                android:text="原声"
+                android:textColor="#ff333333"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_uncle"
+                android:layout_width="@dimen/qb_px_32"
+                android:layout_height="@dimen/qb_px_32">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/qb_px_30"
+                    android:layout_height="@dimen/qb_px_30"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/uncle" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_uncle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_5"
+                android:text="大叔音"
+                android:textColor="#ff333333"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_loli"
+                android:layout_width="@dimen/qb_px_32"
+                android:layout_height="@dimen/qb_px_32">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/qb_px_30"
+                    android:layout_height="@dimen/qb_px_30"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/loli" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_loli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_5"
+                android:text="萝莉音"
+                android:textColor="#ff333333"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qb_px_24"
+        android:layout_marginTop="@dimen/qb_px_10"
+        android:layout_marginBottom="@dimen/qb_px_15"
+        android:text="提示：当前美化已关闭，该功能不能使用"
+        android:textColor="#ff437fe6"
+        android:textSize="8sp" />
+
+</LinearLayout>

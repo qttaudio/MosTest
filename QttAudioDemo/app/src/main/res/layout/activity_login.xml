@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="217dp"
+        android:layout_height="137dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/bg" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="217dp"
+        android:layout_height="137dp"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/bottom_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qb_px_16"
+        android:layout_marginTop="@dimen/qb_px_67"
+        android:layout_marginRight="@dimen/qb_px_16"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:text="QttAudio视频Demo"
+            android:textColor="#ff272b30"
+            android:textSize="22sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qb_px_17"
+            android:layout_marginTop="@dimen/qb_px_6"
+            android:text="欢迎体验高清流畅的视频聊天"
+            android:textColor="#ff798089"
+            android:textSize="12sp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/qb_px_20"
+            android:text="1V1视频房间号"
+            android:textColor="#ff4f565f"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_40"
+            android:layout_marginTop="@dimen/qb_px_9"
+            android:background="@drawable/shape_rectangle_frame_gray">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ed_room_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/qb_px_14"
+                android:background="@null"
+                android:maxLength="8"
+                android:hint="请输入房间号，8位数以内，如234"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_clear"
+                android:layout_width="@dimen/qb_px_15"
+                android:layout_height="@dimen/qb_px_15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/qb_px_15"
+                android:src="@mipmap/clear"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_join_room"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_40"
+            android:layout_marginTop="@dimen/qb_px_15"
+            android:background="@drawable/selector_btn_enable_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="进入房间"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="180dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="18sp"
+            android:text="两人进入时，请输入同一个房间号"
+            android:textColor="#ff798089"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>
